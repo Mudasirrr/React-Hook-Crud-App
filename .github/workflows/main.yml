@@ -38,4 +38,4 @@ jobs:
       run: npm install -g surge 
           
     - name: Deploy to surge
-run: surge ./build mudasir-crud-app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build mudasir-crud-app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
