@@ -1,38 +1,3 @@
-
-Write a post
-
-
-0
-
-1
-
-0
-
-Cover image for Deploy React Apps on Surge using GitHub Actions (Free)
-Deploy React Apps on Surge using GitHub Actions (Free)
-#react #github #javascript #tutorial
-usamasubhani profile image
-Usama Subhani
-Jun 23 ・2 min read
-GitHub Actions is a tool by GitHub to automate building, testing and deployment of code.
-
-Surge is a simple tool for publishing static websites for free, by only running a single command.
-
-In this post, I have written the steps you can follow to deploy a react app to surge.sh using GitHub actions.
-
-What we need:
-A React application. create
-A GitHub repository. create
-A Surge deploy token.
-Get surge deploy token
-npm install surge
-surge
-Enter username/email and password to login.
-Then run surge token to generate token.
-Copy this token and add it as a secret in the GitHub repository.
-
-Setup GitHub Actions
-GitHub actions are triggered by yaml files in .github/workflows/ directory. Create a yaml file in this directory and add these lines.
 name: Deploy
 
 on:
